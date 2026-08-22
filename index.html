@@ -1,209 +1,140 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Sayandeep Ghosh</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Sayandeep Ghosh — AI systems, quantitative tooling, mathematical research, and algorithms.">
+  <meta name="theme-color" content="#f5f5f7">
+  <title>Sayandeep Ghosh — Portfolio</title>
+  <style>
+    :root{
+      --bg:#f5f5f7;--card:rgba(255,255,255,.78);--ink:#1d1d1f;--muted:#6e6e73;
+      --line:rgba(0,0,0,.08);--blue:#0071e3;--shadow:0 16px 50px rgba(0,0,0,.08);
+      --radius:28px
+    }
+    @media(prefers-color-scheme:dark){
+      :root{--bg:#000;--card:rgba(28,28,30,.76);--ink:#f5f5f7;--muted:#a1a1a6;--line:rgba(255,255,255,.10);--blue:#2997ff;--shadow:0 16px 50px rgba(0,0,0,.35)}
+    }
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);
+      font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",Arial,sans-serif;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}
+    nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 80%,transparent);backdrop-filter:saturate(180%) blur(20px);
+      border-bottom:1px solid var(--line)}
+    .navin{height:56px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:700;font-size:14px;letter-spacing:-.2px}
+    .navlinks{display:flex;gap:18px;font-size:13px;color:var(--muted)}.navlinks a:hover{color:var(--ink)}
+    .hero{padding:110px 0 78px}.eyebrow{font-size:15px;font-weight:700;color:var(--blue);margin-bottom:14px}
+    h1{font-size:clamp(48px,8vw,92px);line-height:.95;letter-spacing:-.055em;margin:0;max-width:940px}
+    .hero p{font-size:clamp(19px,2.4vw,28px);line-height:1.25;letter-spacing:-.02em;color:var(--muted);max-width:780px;margin:28px 0 0}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:999px;font-size:14px;font-weight:650;border:1px solid var(--line)}
+    .primary{background:var(--blue);color:#fff;border-color:transparent}.secondary{background:var(--card);backdrop-filter:blur(16px)}
+    .section{padding:42px 0 70px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:22px}
+    h2{font-size:clamp(30px,4vw,46px);letter-spacing:-.04em;margin:0}.sub{color:var(--muted);max-width:520px;line-height:1.5;font-size:15px}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);backdrop-filter:blur(22px);transition:.25s ease}
+    .card:hover{transform:translateY(-3px)}.kicker{font-size:12px;font-weight:750;color:var(--blue);letter-spacing:.06em;text-transform:uppercase}
+    .card h3{font-size:25px;letter-spacing:-.03em;margin:10px 0 10px}.card p{color:var(--muted);font-size:15px;line-height:1.58;margin:0}
+    .meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}.pill{font-size:11px;font-weight:650;background:color-mix(in srgb,var(--ink) 6%,transparent);padding:6px 9px;border-radius:999px}
+    .wide{grid-column:1/-1}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stat{padding:22px;border-radius:22px;background:var(--card);border:1px solid var(--line)}
+    .stat b{display:block;font-size:25px;letter-spacing:-.03em}.stat span{color:var(--muted);font-size:12px}
+    .timeline{display:grid;gap:14px}.row{display:grid;grid-template-columns:180px 1fr;gap:22px;padding:24px 0;border-top:1px solid var(--line)}
+    .row:first-child{border-top:0}.when{color:var(--muted);font-size:13px}.row h3{margin:0 0 7px;font-size:19px}.row p{margin:0;color:var(--muted);line-height:1.6;font-size:14px}
+    footer{padding:64px 0 80px;color:var(--muted);font-size:13px}.footerin{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:28px}
+    @media(max-width:760px){.navlinks a:nth-child(-n+2){display:none}.hero{padding-top:72px}.grid,.stats{grid-template-columns:1fr}.wide{grid-column:auto}.row{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+<nav>
+  <div class="wrap navin">
+    <a class="brand" href="#">Sayandeep Ghosh</a>
+    <div class="navlinks">
+      <a href="#work">Work</a><a href="#about">About</a>
+      <a href="resume.html">Résumé</a>
+      <a href="https://github.com/Sayandeepghosh">GitHub</a>
+    </div>
+  </div>
+</nav>
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">My Portfolio</a></li>
-							<li><a href="#one">Who am I</a></li>
-							<li><a href="#two">My Projects</a></li>
-							<li><a href="#three">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+<main>
+  <section class="hero wrap">
+    <div class="eyebrow">Computer Science · AI · Research</div>
+    <h1>I build, test, and document ambitious technical ideas.</h1>
+    <p>Computer Science graduate focused on AI applications, quantitative systems, mathematical computing, algorithms, and reproducible research.</p>
+    <div class="actions">
+      <a class="btn primary" href="#work">View selected work →</a>
+      <a class="btn secondary" href="resume.html">Open résumé</a>
+      <a class="btn secondary" href="mailto:sayandg7@gmail.com">Email me</a>
+    </div>
+  </section>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+  <section id="work" class="section wrap">
+    <div class="section-head">
+      <h2>Selected work.</h2>
+      <div class="sub">Projects spanning research engineering, AI applications, market tooling, and algorithms.</div>
+    </div>
+    <div class="grid">
+      <a class="card wide" href="https://github.com/Sayandeepghosh/riemann-hypothesis">
+        <div class="kicker">Research · 2026</div>
+        <h3>Riemann Hypothesis Research</h3>
+        <p>An open and reproducible computational/analytic research record with preregistered experiments, derivations, numerical audits, tests, failure analysis, and explicit limits on what is claimed.</p>
+        <div class="meta"><span class="pill">Python</span><span class="pill">Numerical methods</span><span class="pill">Research engineering</span><span class="pill">Testing</span></div>
+      </a>
+      <a class="card" href="https://github.com/Sayandeepghosh/ai_stock_predictor">
+        <div class="kicker">AI + Markets</div>
+        <h3>AI Stock Predictor</h3>
+        <p>Full-stack market-analysis app with React, FastAPI, stock search, technical indicators, interactive charts, forecasting experiments, and deployment tooling.</p>
+        <div class="meta"><span class="pill">React</span><span class="pill">FastAPI</span><span class="pill">Python</span><span class="pill">Docker</span></div>
+      </a>
+      <a class="card" href="https://github.com/Sayandeepghosh/AI-DoubtSolver-App">
+        <div class="kicker">AI + Android</div>
+        <h3>AI Doubt Solver</h3>
+        <p>An Android AI assistant concept supporting text, image/OCR and speech inputs with step-by-step explanations and a modern Compose-based interface.</p>
+        <div class="meta"><span class="pill">Kotlin</span><span class="pill">Jetpack Compose</span><span class="pill">OCR</span><span class="pill">FastAPI</span></div>
+      </a>
+      <a class="card" href="https://github.com/Sayandeepghosh/quantum-trading-bot">
+        <div class="kicker">Quant Systems</div>
+        <h3>Quantum Trading Bot</h3>
+        <p>Educational automated-trading system exploring mean reversion, momentum, machine-learning signals, risk management, portfolio analytics, and real-time updates.</p>
+        <div class="meta"><span class="pill">Python</span><span class="pill">ML</span><span class="pill">Risk</span><span class="pill">React</span></div>
+      </a>
+      <a class="card" href="https://github.com/Sayandeepghosh/Competitive-Programming">
+        <div class="kicker">Algorithms</div>
+        <h3>Competitive Programming</h3>
+        <p>A long-running interest in data structures, algorithms, problem solving, and competitive-programming practice across multiple repositories.</p>
+        <div class="meta"><span class="pill">C++</span><span class="pill">DSA</span><span class="pill">Problem solving</span></div>
+      </a>
+    </div>
+  </section>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Sayandeep Ghosh</h1>
-							<p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
-							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
+  <section id="about" class="section wrap">
+    <div class="section-head">
+      <h2>About.</h2>
+      <div class="sub">I care about rigorous experimentation, clean engineering, and being explicit about what worked, what failed, and why.</div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>2023</b><span>B.Tech CSE graduate</span></div>
+      <div class="stat"><b>Python</b><span>Primary research / backend language</span></div>
+      <div class="stat"><b>Linux</b><span>Daily development environment</span></div>
+      <div class="stat"><b>Open</b><span>Reproducible project documentation</span></div>
+    </div>
+  </section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Sed ipsum dolor</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Feugiat consequat</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
+  <section class="section wrap">
+    <div class="section-head">
+      <h2>Focus.</h2>
+    </div>
+    <div class="timeline">
+      <div class="row"><div class="when">AI systems</div><div><h3>Useful software, not demos alone.</h3><p>Building applications with modern frontends, APIs, model integration, data pipelines, and deployable architectures.</p></div></div>
+      <div class="row"><div class="when">Research</div><div><h3>Reproducibility first.</h3><p>Keeping hypotheses, experiments, code, tests, negative results, and limitations together so technical claims can be inspected rather than merely asserted.</p></div></div>
+      <div class="row"><div class="when">Algorithms</div><div><h3>Strong foundations.</h3><p>Ongoing work in data structures, algorithmic reasoning, competitive programming, and mathematical problem solving.</p></div></div>
+    </div>
+  </section>
+</main>
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-link"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-							</div>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+<footer>
+  <div class="wrap footerin">
+    <span>© 2026 Sayandeep Ghosh</span>
+    <span><a href="mailto:sayandg7@gmail.com">Email</a> · <a href="https://github.com/Sayandeepghosh">GitHub</a> · <a href="resume.html">Résumé</a></span>
+  </div>
+</footer>
+</body>
 </html>
